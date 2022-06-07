@@ -1,0 +1,102 @@
+.box {
+    display: flex;
+    flex-flow: column;
+    padding: 0 24px;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: -16px;
+    
+    p {
+        margin-top: 24px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.wrapper {
+    width: 80%;
+    height: 50%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: auto;
+    padding: 0 0 25px 0;
+}
+
+.Input {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 55%;
+    background: #F2F2F7;
+    border-radius: 8px;
+    gap: 6px;
+    overflow: hidden;
+    
+
+    .MainInput {
+        display: flex;
+        gap: 8px;
+        margin: 0 16px;
+
+        .text {
+            border-radius: 4px;
+            border: none;
+            padding: 12px 30px 12px 16px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .data {
+            border: none;
+            border-radius: 4px;
+            padding: 12px 16px;
+            outline: none;
+      
+            &::-webkit-calendar-picker-indicator {
+                background-image: url("../../assets/Icons/arrow_drop_down_24px.png");
+                background-size: 10px 5px;
+                height: 5px;
+                width: 10px;
+            }
+
+            &::-webkit-datetime-edit-text{
+                display: none;
+            }
+
+            &::-webkit-datetime-edit-month-field { color: #8E8E93;}
+            &::-webkit-datetime-edit-day-field { color: #8E8E93; }
+            &::-webkit-datetime-edit-year-field { color: #8E8E93; }
+        }
+    }
+
+    button {
+        border: 0;
+        background: #3A85F7;
+        border-radius: 8px;
+        color: white;
+        padding: 12px 28px; 
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 16px 0 0 16px;
+    }
+}
+
+
